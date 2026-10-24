@@ -3,8 +3,14 @@
 專為繁體中文設計的去 AI 八股味與動態語氣調控工具。拒絕機械式的對稱排比，告別空洞的學術虛詞。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Ready-green.svg)](https://github.com)
-[![Lang: zh-TW](https://img.shields.io/badge/Language-繁體中文-orange.svg)](https://github.com)
+[![Lang: zh-TW](https://img.shields.io/badge/Language-繁體中文-orange.svg)](https://github.com/YuJunWang/humanizing-ai-text)
+[![De-AI Spectrum](https://img.shields.io/badge/Spectrum-1--10-7928CA.svg)](#去-ai-化光譜-the-de-ai-spectrum)
+[![ADHD Friendly](https://img.shields.io/badge/ADHD-Friendly-FF4081.svg)](#去-ai-化光譜-the-de-ai-spectrum)
+[![Antigravity](https://img.shields.io/badge/Antigravity-Ready-2E7D32.svg)](https://github.com/YuJunWang/humanizing-ai-text)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-D97706.svg)](https://github.com/YuJunWang/humanizing-ai-text)
+[![Cursor Rules](https://img.shields.io/badge/Cursor-.cursorrules-007ACC.svg)](prompts/system-prompt.md)
+[![ChatGPT / Claude Web](https://img.shields.io/badge/ChatGPT%20%7C%20Claude-Web%20Ready-10A37F.svg)](prompts/quick-instruction.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/YuJunWang/humanizing-ai-text/pulls)
 
 ---
 
