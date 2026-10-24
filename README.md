@@ -117,43 +117,6 @@
 
 ---
 
-### 手動安裝指引 (Manual Setup)
-
-#### 1. Antigravity 使用者
-你可以依據需求，將本專案安裝為「全域可用」或「個別專案專屬」：
-
-- **全域安裝（推薦，所有專案皆可使用）**：
-  ```bash
-  git clone https://github.com/YuJunWang/humanizing-ai-text.git ~/.gemini/config/plugins/humanizing-ai-text
-  ```
-- **單一專案專屬（Workspace 專用）**：
-  在你的工作專案根目錄下執行：
-  ```bash
-  git clone https://github.com/YuJunWang/humanizing-ai-text.git .agents/skills/humanizing-ai-text
-  ```
-
-#### 2. Claude Code 使用者
-複製至全域技能目錄即可直接調用：
-```bash
-git clone https://github.com/YuJunWang/humanizing-ai-text.git ~/.claude/skills/humanizing-ai-text
-```
-
-#### 3. Cursor / Windsurf 使用者
-將 `prompts/system-prompt.md` 的內容直接貼入專案根目錄的 `.cursorrules` 或 `.windsurfrules`，即可作為專案的全域校對規範。
-
-#### 4. 一般對話使用 (ChatGPT / Claude / Gemini)
-
-在對話視窗中貼入你想修改的文章，並直接加上指令（或參考 `prompts/quick-instruction.md`）：
-
-```text
-請使用「去 AI 化光譜」校對以下內容。
-模式：[Spectrum: 4] 平衡派
-文章：
-（貼上你的原始文字）
-```
-
----
-
 ## 靈感來源與致謝 (Acknowledgments & Lineage)
 
 本專案的核心架構是站在開源社群巨人的肩膀上進行的生態整合。特別感謝以下優秀專案與創作者：
