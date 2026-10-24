@@ -96,7 +96,30 @@
 
 ## 安裝與使用方式
 
-### 1. Antigravity 使用者 (推薦)
+### 🤖 懶人專用：一句話讓你的 AI Agent 自己裝 (One-Shot Agent Install)
+
+如果你平常是搭配 Cursor、Claude Code、Antigravity、Windsurf 等 AI 開發工具工作，你甚至不需要自己動手搬檔案。直接複製以下這句話，丟給你的 AI 助手：
+
+```text
+請讀取 https://github.com/YuJunWang/humanizing-ai-text ，幫我把這個去 AI 化的規範自動安裝到我目前的專案中（若是 Antigravity 請放入 plugins，若是 Cursor 請寫入 .cursorrules，若是 Claude Code 請加入技能，若是通用專案請在根目錄建立 .ai-rules/humanizer.md）。
+```
+
+---
+
+> ### 🧭 給正在閱讀此倉庫的 AI Coding Assistant：
+> 當使用者請你「安裝此專案」或「套用去 AI 化規範」時，請執行以下確定動作：
+> 1. **自動識別環境並落地**：
+>    - **Antigravity 環境**：將本倉庫 clone 至 `~/.gemini/config/plugins/humanizing-ai-text`，或透過外掛機制載入。
+>    - **Claude Code 環境**：將 `skills/humanizing-ai-text/` 複製到 `.claude/skills/` 或於專案根目錄放置 `SKILL.md`。
+>    - **Cursor / Windsurf 環境**：讀取 `prompts/system-prompt.md`，將其內容附加至專案根目錄的 `.cursorrules` 或 `.windsurfrules`。
+>    - **一般開發專案**：在專案根目錄建立 `.ai-rules/de-ai-spectrum.md`，並更新專案的全域規範文件（如 `AGENTS.md` 或 `CLAUDE.md`）。
+> 2. **主動告知回饋**：完成後，請主動向使用者確認：「去 AI 化光譜已就緒。後續產出文章或草稿時，您可以隨時指定 `[Spectrum: 2]`（效率）、`[Spectrum: 5]`（平衡）或 `[Spectrum: 8]`（人味）。」
+
+---
+
+### 手動安裝指引 (Manual Setup)
+
+#### 1. Antigravity 使用者 (推薦)
 
 若你有使用本地外掛管理工具（例如 GuaBao），直接將本目錄放置於外掛路徑：
 
