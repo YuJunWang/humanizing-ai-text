@@ -109,8 +109,8 @@
 > ### 🧭 給正在閱讀此倉庫的 AI Coding Assistant：
 > 當使用者請你「安裝此專案」或「套用去 AI 化規範」時，請執行以下確定動作：
 > 1. **自動識別環境並落地**：
->    - **Antigravity 環境**：將本倉庫 clone 至 `~/.gemini/config/plugins/humanizing-ai-text`，或透過外掛機制載入。
->    - **Claude Code 環境**：將 `skills/humanizing-ai-text/` 複製到 `.claude/skills/` 或於專案根目錄放置 `SKILL.md`。
+>    - **Antigravity 環境**：將本倉庫 clone 至全域外掛目錄 `~/.gemini/config/plugins/humanizing-ai-text`，或專案目錄 `.agents/skills/humanizing-ai-text`。
+>    - **Claude Code 環境**：將本倉庫 clone 至 `~/.claude/skills/humanizing-ai-text`，或將 `SKILL.md` 放入專案根目錄。
 >    - **Cursor / Windsurf 環境**：讀取 `prompts/system-prompt.md`，將其內容附加至專案根目錄的 `.cursorrules` 或 `.windsurfrules`。
 >    - **一般開發專案**：在專案根目錄建立 `.ai-rules/de-ai-spectrum.md`，並更新專案的全域規範文件（如 `AGENTS.md` 或 `CLAUDE.md`）。
 > 2. **主動告知回饋**：完成後，請主動向使用者確認：「去 AI 化光譜已就緒。後續產出文章或草稿時，您可以隨時指定 `[Spectrum: 2]`（效率）、`[Spectrum: 5]`（平衡）或 `[Spectrum: 8]`（人味）。」
@@ -119,20 +119,29 @@
 
 ### 手動安裝指引 (Manual Setup)
 
-#### 1. Antigravity 使用者 (推薦)
+#### 1. Antigravity 使用者
+你可以依據需求，將本專案安裝為「全域可用」或「個別專案專屬」：
 
-若你有使用本地外掛管理工具（例如 GuaBao），直接將本目錄放置於外掛路徑：
+- **全域安裝（推薦，所有專案皆可使用）**：
+  ```bash
+  git clone https://github.com/YuJunWang/humanizing-ai-text.git ~/.gemini/config/plugins/humanizing-ai-text
+  ```
+- **單一專案專屬（Workspace 專用）**：
+  在你的工作專案根目錄下執行：
+  ```bash
+  git clone https://github.com/YuJunWang/humanizing-ai-text.git .agents/skills/humanizing-ai-text
+  ```
 
+#### 2. Claude Code 使用者
+複製至全域技能目錄即可直接調用：
 ```bash
-# 複製到 Antigravity plugins 目錄
-git clone https://github.com/YuJunWang/humanizing-ai-text.git ~/.gemini/config/plugins/humanizing-ai-text
+git clone https://github.com/YuJunWang/humanizing-ai-text.git ~/.claude/skills/humanizing-ai-text
 ```
 
-### 2. Cursor / Windsurf 使用者
+#### 3. Cursor / Windsurf 使用者
+將 `prompts/system-prompt.md` 的內容直接貼入專案根目錄的 `.cursorrules` 或 `.windsurfrules`，即可作為專案的全域校對規範。
 
-將 `prompts/system-prompt.md` 的內容直接貼入專案根目錄的 `.cursorrules`，即可作為專案的全域校對規範。
-
-### 3. 一般對話使用 (ChatGPT / Claude / Gemini)
+#### 4. 一般對話使用 (ChatGPT / Claude / Gemini)
 
 在對話視窗中貼入你想修改的文章，並直接加上指令（或參考 `prompts/quick-instruction.md`）：
 
