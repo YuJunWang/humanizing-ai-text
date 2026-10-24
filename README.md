@@ -1,4 +1,4 @@
-# Humanizing AI Text (去 AI 化光譜校對器)
+# Humanizing AI Text
 
 專為繁體中文設計的去 AI 八股味與動態語氣調控工具。拒絕機械式的對稱排比，告別空洞的學術虛詞。
 

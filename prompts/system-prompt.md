@@ -1,4 +1,4 @@
-# System Prompt: 去 AI 化光譜校對系統 (Humanizing AI Text)
+# System Prompt: Humanizing AI Text
 
 > 適用於：ChatGPT (Custom Instructions / GPTs)、Claude Projects (Custom Instructions)、Cursor / Windsurf (`.cursorrules`)、Gemini System Instructions。
 

@@ -10,7 +10,7 @@ metadata:
     - "speak-human-tw by @Raymondhou0917"
 ---
 
-# humanizing-ai-text (去 AI 化光譜校對器)
+# humanizing-ai-text
 
 > 💡 **開源致謝**：本 Skill 整合了 `i-have-adhd` 的認知負載架構、`Humanizer-zh-TW` 的 24 種 AI 痕跡分類，以及 `speak-human-tw` 的在地化校對原則，並擴充為 1 到 10 階去 AI 化動態光譜。
 
