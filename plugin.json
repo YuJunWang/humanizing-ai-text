@@ -1,0 +1,14 @@
+{
+  "name": "humanizing-ai-text",
+  "version": "1.0.0",
+  "description": "去 AI 化與動態語氣光譜調控的全域改寫技能 (支援 ADHD 友善與繁中在地化)",
+  "author": "Yu-Jun Wang",
+  "license": "MIT",
+  "tags": [
+    "de-ai",
+    "humanizer",
+    "taiwan-localization",
+    "adhd-friendly",
+    "spectrum"
+  ]
+}
