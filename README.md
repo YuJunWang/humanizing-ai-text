@@ -96,7 +96,7 @@
 
 ```bash
 # 複製到 Antigravity plugins 目錄
-git clone https://github.com/your-username/humanizing-ai-text.git ~/.gemini/config/plugins/humanizing-ai-text
+git clone https://github.com/YuJunWang/humanizing-ai-text.git ~/.gemini/config/plugins/humanizing-ai-text
 ```
 
 ### 2. Cursor / Windsurf 使用者
